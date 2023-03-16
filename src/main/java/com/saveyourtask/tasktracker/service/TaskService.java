@@ -31,6 +31,7 @@ public class TaskService {
                 .name(request.getName())
                 .description(request.getDescription())
                 .dueDateTime(LocalDate.parse(request.getDueDateTime(), formatter))
+//                .status(true)
                 .build();
         Task saved = taskRepository.save(task);
         return getTaskDto(saved);

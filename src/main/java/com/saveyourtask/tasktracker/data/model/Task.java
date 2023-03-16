@@ -18,6 +18,6 @@ public class Task {
     private Long id;
     private String name;
     private String description;
-    private String status;
+    private boolean status;
     private LocalDate dueDateTime;
 }
